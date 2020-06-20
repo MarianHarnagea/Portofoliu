@@ -27,12 +27,6 @@ body.night {
   z-index: -1;
 }
 
-.site {
-  width: 90%;
-  height: 100%;
-  margin: auto;
-}
-
 .dark-mode-container {
   width: 100%;
   height: 10vh;
@@ -87,9 +81,7 @@ body.night {
 }
 
 .header {
-  width: 90%;
-  margin: auto;
-  height: 90vh;
+  min-height: 90vh;
 }
 
 .header .greading {
@@ -130,10 +122,17 @@ body.night {
   letter-spacing: 1px;
   font-size: 1.5rem;
   line-height: 2.3rem;
+  max-width: 700px;
+}
+
+@media (max-width: 576px) {
+  .header .intro-text h2 {
+    font-size: 1.3rem;
+  }
 }
 
 .header .intro-text h2 span {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .header .email {
@@ -161,11 +160,6 @@ body.night {
   color: #007bff;
 }
 
-.skills-container {
-  width: 100%;
-  margin-bottom: 100px;
-}
-
 .skills-container h1 {
   font-weight: 500;
   font-size: 1rem;
@@ -175,39 +169,30 @@ body.night {
   letter-spacing: 2px;
 }
 
-.skills-container .skills-grid {
-  width: 70%;
-  margin: auto;
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 20px;
-  -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-}
-
-.skills-container .skills-grid .skills {
+.skills-container .skills {
   margin-bottom: 15px;
 }
 
-.skills-container .skills-grid .skills h2 {
+.skills-container .skills h2 {
   font-weight: 500;
   font-size: 1rem;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 
-.skills-container .skills-grid .skills ul {
+.skills-container .skills ul {
   line-height: 1.5rem;
   list-style: none;
 }
 
-.skills-container .skills-grid .skills ul li {
+.skills-container .skills ul li {
   font-size: 0.9rem;
 }
 
-.experience {
-  width: 100%;
-  margin-bottom: 100px;
+@media (max-width: 576px) {
+  .skills-container .skills ul li {
+    font-size: 0.8rem;
+  }
 }
 
 .experience h1 {
@@ -220,8 +205,6 @@ body.night {
 }
 
 .experience .exp-text {
-  width: 70%;
-  margin: auto;
   margin-bottom: 50px;
   line-height: 1.4rem;
 }
@@ -240,8 +223,6 @@ body.night {
 }
 
 .experience .resume {
-  width: 70%;
-  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -253,6 +234,12 @@ body.night {
 .experience .resume h3 {
   margin-right: 15px;
   font-weight: 500;
+}
+
+@media (max-width: 576px) {
+  .experience .resume h3 {
+    font-size: 1.3rem;
+  }
 }
 
 .experience .resume i {
@@ -270,7 +257,6 @@ body.night {
 
 .projects-container {
   width: 100%;
-  margin-bottom: 100px;
 }
 
 .projects-container h1 {
@@ -283,8 +269,6 @@ body.night {
 }
 
 .projects-container .project {
-  width: 90%;
-  margin: auto;
   margin-bottom: 100px;
 }
 
@@ -306,15 +290,12 @@ body.night {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .projects-container .project .project-links .view-links {
   border: 1px solid #007bff;
   margin-left: 15px;
-  border-radius: 2px;
+  border-radius: 3px;
   padding: 5px;
 }
 
@@ -326,6 +307,7 @@ body.night {
 .projects-container .project .project-links .view-links a h3 {
   font-size: 10px;
   font-weight: 500;
+  margin: 0;
 }
 
 .projects-container .project .project-text {
@@ -363,6 +345,7 @@ body.night {
   font-size: 10px;
   font-weight: 500;
   color: #007bff;
+  margin: 0;
 }
 
 .footer {
@@ -412,535 +395,6 @@ body.night {
 .top i {
   font-size: 20px;
   cursor: pointer;
-}
-
-@media screen and (min-width: 500px) {
-  .experience {
-    width: 100%;
-    margin-bottom: 100px;
-  }
-  .experience h1 {
-    font-weight: 500;
-    font-size: 1rem;
-    text-transform: uppercase;
-    color: #007bff;
-    margin-bottom: 50px;
-  }
-  .experience .exp-text {
-    width: 70%;
-    margin: auto;
-    margin-bottom: 50px;
-    line-height: 1.4rem;
-  }
-  .experience .exp-text .time-place {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .experience .exp-text .time-place h2 {
-    font-weight: 500;
-    font-size: 1rem;
-  }
-  .experience .exp-text .time-place p {
-    font-size: 0.8rem;
-  }
-  .experience .exp-text h3 {
-    font-size: 1rem;
-  }
-  .experience .resume {
-    width: 70%;
-    margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .experience .resume h3 {
-    margin-right: 15px;
-    font-weight: 500;
-  }
-  .experience .resume i {
-    color: #007bff;
-    cursor: pointer;
-    -webkit-transition: 0.2s ease-in;
-    transition: 0.2s ease-in;
-    font-size: 18px;
-  }
-  .experience .resume i:hover {
-    -webkit-transform: translateX(5px);
-            transform: translateX(5px);
-  }
-}
-
-@media screen and (min-width: 850px) {
-  .header {
-    width: 90%;
-    margin: auto;
-    height: 90vh;
-  }
-  .header .greading {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: 100px;
-  }
-  .header .greading h1 {
-    font-size: 2.5rem;
-    margin-right: 15px;
-  }
-  .header .greading img {
-    width: 35px;
-    height: 35px;
-  }
-  .header .intro-text {
-    width: 80%;
-    margin-top: 100px;
-  }
-  .header .intro-text h2 {
-    letter-spacing: 1px;
-    font-size: 1.6rem;
-    line-height: 2.3rem;
-  }
-  .header .intro-text h2 span {
-    font-weight: 500;
-  }
-  .header .email {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: 100px;
-  }
-  .header .email h3 {
-    font-size: 1rem;
-    font-weight: 400;
-    margin-right: 15px;
-  }
-  .header .email a {
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 400;
-  }
-  .header .email a h3 {
-    border-bottom: 4px solid #007bff;
-    color: #007bff;
-  }
-  .skills-container {
-    width: 100%;
-    margin-bottom: 150px;
-  }
-  .skills-container h1 {
-    font-weight: 500;
-    font-size: 1rem;
-    text-transform: uppercase;
-    color: #007bff;
-    margin-bottom: 50px;
-  }
-  .skills-container .skills-grid {
-    width: 70%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .skills-container .skills-grid .skills {
-    margin-bottom: 15px;
-  }
-  .skills-container .skills-grid .skills h2 {
-    font-weight: 500;
-    font-size: 1rem;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-  }
-  .skills-container .skills-grid .skills ul {
-    line-height: 1.5rem;
-    list-style: none;
-  }
-  .skills-container .skills-grid .skills ul li {
-    font-size: 0.9rem;
-  }
-  .experience {
-    width: 100%;
-    margin-bottom: 150px;
-  }
-  .experience h1 {
-    font-weight: 500;
-    font-size: 1rem;
-    text-transform: uppercase;
-    color: #007bff;
-    margin-bottom: 50px;
-  }
-  .experience .exp-text {
-    width: 70%;
-    margin: auto;
-    margin-bottom: 50px;
-    line-height: 1.4rem;
-  }
-  .experience .exp-text .time-place {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .experience .exp-text .time-place h2 {
-    font-weight: 500;
-    font-size: 1rem;
-  }
-  .experience .exp-text .time-place p {
-    font-size: 0.8rem;
-  }
-  .experience .exp-text h3 {
-    font-size: 1rem;
-  }
-  .experience .resume {
-    width: 70%;
-    margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .experience .resume h3 {
-    margin-right: 15px;
-    font-weight: 500;
-  }
-  .experience .resume i {
-    color: #007bff;
-    cursor: pointer;
-    -webkit-transition: 0.2s ease-in;
-    transition: 0.2s ease-in;
-    font-size: 18px;
-  }
-  .experience .resume i:hover {
-    -webkit-transform: translateX(5px);
-            transform: translateX(5px);
-  }
-  .projects-container {
-    width: 100%;
-    margin-bottom: 150px;
-  }
-  .projects-container h1 {
-    font-weight: 500;
-    font-size: 1rem;
-    text-transform: uppercase;
-    color: #007bff;
-    margin-bottom: 50px;
-  }
-  .projects-container .project {
-    width: 70%;
-    margin: auto;
-    margin-bottom: 100px;
-  }
-  .projects-container .project .project-img {
-    max-width: 700px;
-    margin-bottom: 30px;
-  }
-  .projects-container .project .project-img img {
-    width: 100%;
-  }
-  .projects-container .project .project-links {
-    max-width: 700px;
-    margin-bottom: 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .projects-container .project .project-links .view-links {
-    border: 1px solid #007bff;
-    margin-left: 15px;
-    border-radius: 2px;
-    padding: 5px;
-  }
-  .projects-container .project .project-links .view-links a {
-    text-decoration: none;
-    color: #6666ff;
-  }
-  .projects-container .project .project-links .view-links a h3 {
-    font-size: 10px;
-    font-weight: 500;
-  }
-  .projects-container .project .project-text {
-    max-width: 700px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #007bff;
-  }
-  .projects-container .project .project-text h2 {
-    font-weight: 500;
-    font-size: 1rem;
-    margin-bottom: 20px;
-  }
-  .projects-container .project .project-text p {
-    font-size: 0.8rem;
-    margin-bottom: 20px;
-  }
-  .projects-container .project .project-text .project-info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-  }
-  .projects-container .project .project-text .project-info .view-info {
-    border: 1px solid #007bff;
-    margin-left: 15px;
-    border-radius: 2px;
-    padding: 5px;
-  }
-  .projects-container .project .project-text .project-info .view-info h3 {
-    font-size: 10px;
-    font-weight: 500;
-    color: #007bff;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .header {
-    width: 90%;
-    margin: auto;
-    height: 90vh;
-  }
-  .header .greading {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: 100px;
-  }
-  .header .greading h1 {
-    font-size: 2.5rem;
-    margin-right: 15px;
-  }
-  .header .greading img {
-    width: 35px;
-    height: 35px;
-  }
-  .header .intro-text {
-    width: 80%;
-    margin-top: 100px;
-  }
-  .header .intro-text h2 {
-    letter-spacing: 1px;
-    font-size: 1.6rem;
-    line-height: 2.3rem;
-  }
-  .header .intro-text h2 span {
-    font-weight: 500;
-  }
-  .header .email {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: 100px;
-  }
-  .header .email h3 {
-    font-size: 1rem;
-    font-weight: 400;
-    margin-right: 15px;
-  }
-  .header .email a {
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 400;
-  }
-  .header .email a h3 {
-    border-bottom: 4px solid #007bff;
-    color: #007bff;
-  }
-  .skills-container {
-    width: 100%;
-    margin-bottom: 100px;
-  }
-  .skills-container h1 {
-    font-weight: 500;
-    font-size: 1rem;
-    text-transform: uppercase;
-    color: #007bff;
-    margin-bottom: 50px;
-  }
-  .skills-container .skills-grid {
-    width: 50%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .skills-container .skills-grid .skills {
-    margin-bottom: 15px;
-  }
-  .skills-container .skills-grid .skills h2 {
-    font-weight: 500;
-    font-size: 1rem;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-  }
-  .skills-container .skills-grid .skills ul {
-    line-height: 1.5rem;
-    list-style: none;
-  }
-  .skills-container .skills-grid .skills ul li {
-    font-size: 0.9rem;
-  }
-  .experience {
-    width: 100%;
-    margin-bottom: 100px;
-  }
-  .experience h1 {
-    font-weight: 500;
-    font-size: 1rem;
-    text-transform: uppercase;
-    color: #007bff;
-    margin-bottom: 50px;
-  }
-  .experience .exp-text {
-    width: 50%;
-    margin: auto;
-    margin-bottom: 50px;
-    line-height: 1.4rem;
-  }
-  .experience .exp-text .time-place {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .experience .exp-text .time-place h2 {
-    font-weight: 500;
-    font-size: 1rem;
-  }
-  .experience .exp-text .time-place p {
-    font-size: 0.8rem;
-  }
-  .experience .exp-text h3 {
-    font-size: 1rem;
-  }
-  .experience .resume {
-    width: 50%;
-    margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .experience .resume h3 {
-    margin-right: 15px;
-    font-weight: 500;
-  }
-  .experience .resume i {
-    color: #007bff;
-    cursor: pointer;
-    -webkit-transition: 0.2s ease-in;
-    transition: 0.2s ease-in;
-    font-size: 18px;
-  }
-  .experience .resume i:hover {
-    -webkit-transform: translateX(5px);
-            transform: translateX(5px);
-  }
-  .projects-container {
-    width: 100%;
-    margin-bottom: 100px;
-  }
-  .projects-container h1 {
-    font-weight: 500;
-    font-size: 1rem;
-    text-transform: uppercase;
-    color: #007bff;
-    margin-bottom: 50px;
-  }
-  .projects-container .project {
-    width: 50%;
-    margin: auto;
-    margin-bottom: 100px;
-  }
-  .projects-container .project .project-img {
-    max-width: 700px;
-    margin-bottom: 30px;
-  }
-  .projects-container .project .project-img img {
-    width: 100%;
-  }
-  .projects-container .project .project-links {
-    max-width: 700px;
-    margin-bottom: 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .projects-container .project .project-links .view-links {
-    border: 1px solid #007bff;
-    margin-left: 15px;
-    border-radius: 2px;
-    padding: 5px;
-  }
-  .projects-container .project .project-links .view-links a {
-    text-decoration: none;
-    color: #007bff;
-  }
-  .projects-container .project .project-links .view-links a h3 {
-    font-size: 10px;
-    font-weight: 500;
-  }
-  .projects-container .project .project-text {
-    max-width: 700px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #007bff;
-  }
-  .projects-container .project .project-text h2 {
-    font-weight: 500;
-    font-size: 1rem;
-    margin-bottom: 20px;
-  }
-  .projects-container .project .project-text p {
-    font-size: 0.8rem;
-    margin-bottom: 20px;
-  }
-  .projects-container .project .project-text .project-info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-  }
-  .projects-container .project .project-text .project-info .view-info {
-    border: 1px solid #007bff;
-    margin-left: 15px;
-    border-radius: 2px;
-    padding: 5px;
-  }
-  .projects-container .project .project-text .project-info .view-info h3 {
-    font-size: 10px;
-    font-weight: 500;
-    color: #007bff;
-  }
 }
 
 @-webkit-keyframes wave {
