@@ -6,7 +6,6 @@ $myColor: #007bff;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  overflow-x: hidden;
 }
 
 .body {
@@ -70,6 +69,7 @@ body.night {
 
 .header {
   min-height: 90vh;
+  overflow-x: hidden;
 
   .greading {
     width: 100%;
@@ -129,6 +129,7 @@ body.night {
 }
 
 .skills-container {
+  overflow-x: hidden;
   h1 {
     font-weight: 500;
     font-size: 1rem;
@@ -162,6 +163,7 @@ body.night {
 }
 
 .experience {
+  overflow-x: hidden;
   h1 {
     font-weight: 500;
     font-size: 1rem;
@@ -212,6 +214,7 @@ body.night {
 
 .projects-container {
   width: 100%;
+  overflow-x: hidden;
 
   h1 {
     font-weight: 500;

@@ -5,7 +5,6 @@
           box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  overflow-x: hidden;
 }
 
 .body {
@@ -83,6 +82,7 @@ body.night {
 
 .header {
   min-height: 90vh;
+  overflow-x: hidden;
 }
 
 .header .greading {
@@ -161,6 +161,10 @@ body.night {
   color: #007bff;
 }
 
+.skills-container {
+  overflow-x: hidden;
+}
+
 .skills-container h1 {
   font-weight: 500;
   font-size: 1rem;
@@ -194,6 +198,10 @@ body.night {
   .skills-container .skills ul li {
     font-size: 0.8rem;
   }
+}
+
+.experience {
+  overflow-x: hidden;
 }
 
 .experience h1 {
@@ -258,6 +266,7 @@ body.night {
 
 .projects-container {
   width: 100%;
+  overflow-x: hidden;
 }
 
 .projects-container h1 {
