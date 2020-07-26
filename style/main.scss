@@ -71,8 +71,6 @@ body.night {
 }
 
 .header {
-  min-height: 90vh;
-
   .greading {
     width: 100%;
     display: flex;
@@ -131,6 +129,7 @@ body.night {
 }
 
 .skills-container {
+  margin-top: 100px;
   h1 {
     font-weight: 500;
     font-size: 1rem;

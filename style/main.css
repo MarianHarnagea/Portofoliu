@@ -83,10 +83,6 @@ body.night {
   margin-left: 20px;
 }
 
-.header {
-  min-height: 90vh;
-}
-
 .header .greading {
   width: 100%;
   display: -webkit-box;
@@ -161,6 +157,10 @@ body.night {
 .header .email a h3 {
   border-bottom: 4px solid #007bff;
   color: #007bff;
+}
+
+.skills-container {
+  margin-top: 100px;
 }
 
 .skills-container h1 {
