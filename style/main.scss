@@ -10,6 +10,9 @@ $myColor: #007bff;
 
 .body {
   transition: 0.3s ease-in;
+}
+
+.site {
   overflow-x: hidden;
 }
 
@@ -69,7 +72,6 @@ body.night {
 
 .header {
   min-height: 90vh;
-  overflow-x: hidden;
 
   .greading {
     width: 100%;
@@ -129,7 +131,6 @@ body.night {
 }
 
 .skills-container {
-  overflow-x: hidden;
   h1 {
     font-weight: 500;
     font-size: 1rem;
@@ -163,7 +164,6 @@ body.night {
 }
 
 .experience {
-  overflow-x: hidden;
   h1 {
     font-weight: 500;
     font-size: 1rem;
@@ -214,7 +214,6 @@ body.night {
 
 .projects-container {
   width: 100%;
-  overflow-x: hidden;
 
   h1 {
     font-weight: 500;

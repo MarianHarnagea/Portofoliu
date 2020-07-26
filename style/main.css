@@ -10,6 +10,9 @@
 .body {
   -webkit-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
+}
+
+.site {
   overflow-x: hidden;
 }
 
@@ -82,7 +85,6 @@ body.night {
 
 .header {
   min-height: 90vh;
-  overflow-x: hidden;
 }
 
 .header .greading {
@@ -161,10 +163,6 @@ body.night {
   color: #007bff;
 }
 
-.skills-container {
-  overflow-x: hidden;
-}
-
 .skills-container h1 {
   font-weight: 500;
   font-size: 1rem;
@@ -198,10 +196,6 @@ body.night {
   .skills-container .skills ul li {
     font-size: 0.8rem;
   }
-}
-
-.experience {
-  overflow-x: hidden;
 }
 
 .experience h1 {
@@ -266,7 +260,6 @@ body.night {
 
 .projects-container {
   width: 100%;
-  overflow-x: hidden;
 }
 
 .projects-container h1 {
