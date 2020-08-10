@@ -334,6 +334,8 @@ body.night {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
 }
 
@@ -342,6 +344,7 @@ body.night {
   margin-left: 15px;
   border-radius: 2px;
   padding: 5px;
+  margin-top: 15px;
 }
 
 .projects-container .project .project-text .project-info .view-info h3 {
