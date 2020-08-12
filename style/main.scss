@@ -284,7 +284,7 @@ body.night {
 
         .view-info {
           border: 1px solid $myColor;
-          margin-left: 15px;
+          margin-right: 15px;
           border-radius: 2px;
           padding: 5px;
           margin-top: 15px;
@@ -320,7 +320,7 @@ body.night {
 
     .view-info {
       border: 1px solid $myColor;
-      margin-left: 15px;
+      margin-right: 15px;
       border-radius: 2px;
       padding: 5px;
       margin-top: 15px;
@@ -335,7 +335,6 @@ body.night {
 
   .project-text {
     max-width: 700px;
-    padding-bottom: 20px;
 
     a {
       text-decoration: none;

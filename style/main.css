@@ -342,7 +342,7 @@ body.night {
 
 .projects-container .project .project-text .project-info .view-info {
   border: 1px solid #007bff;
-  margin-left: 15px;
+  margin-right: 15px;
   border-radius: 2px;
   padding: 5px;
   margin-top: 15px;
@@ -380,7 +380,7 @@ body.night {
 
 .other-projects-container .project-info .view-info {
   border: 1px solid #007bff;
-  margin-left: 15px;
+  margin-right: 15px;
   border-radius: 2px;
   padding: 5px;
   margin-top: 15px;
@@ -395,7 +395,6 @@ body.night {
 
 .other-projects-container .project-text {
   max-width: 700px;
-  padding-bottom: 20px;
 }
 
 .other-projects-container .project-text a {
