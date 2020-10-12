@@ -466,6 +466,29 @@ body.night {
   cursor: pointer;
 }
 
+.footer-fixed {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.footer-fixed a {
+  margin: 20px 0px;
+}
+
+.footer-fixed a i {
+  font-size: 24px;
+}
+
 @-webkit-keyframes wave {
   from {
     -webkit-transform: none;

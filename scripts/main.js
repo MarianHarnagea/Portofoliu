@@ -19,13 +19,6 @@ switchBtn.addEventListener("click", () => {
 });
 //Night Mode End
 
-//Scroll Animations
-AOS.init({
-  duration: 1000,
-  easing: "ease"
-});
-//Scroll Animations End
-
 //Scroll To Top
 const topBtn = document.querySelector(".top");
 
@@ -33,10 +26,10 @@ topBtn.addEventListener("click", () => {
   window.scrollTo({
     top: 0,
     left: 0,
-    behavior: "smooth"
+    behavior: "smooth",
   });
 });
 //Scroll To Top End
 
 // Patricles
-particlesJS.load("particles-js", "./scripts/particles.json", function() {});
+particlesJS.load("particles-js", "./scripts/particles.json", function () {});

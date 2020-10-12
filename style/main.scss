@@ -394,6 +394,23 @@ body.night {
   }
 }
 
+.footer-fixed {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-50%);
+
+  a {
+    margin: 20px 0px;
+
+    i {
+      font-size: 24px;
+    }
+  }
+}
+
 @keyframes wave {
   from {
     -webkit-transform: none;
