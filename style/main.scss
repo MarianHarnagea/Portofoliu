@@ -1,4 +1,5 @@
-$myColor: #007bff;
+$primaryColor: #007bff;
+$secondaryColor: #171c28;
 
 * {
   margin: 0;
@@ -122,8 +123,8 @@ body.night {
       font-weight: 400;
 
       h3 {
-        border-bottom: 4px solid $myColor;
-        color: $myColor;
+        border-bottom: 4px solid $primaryColor;
+        color: $primaryColor;
       }
     }
   }
@@ -135,7 +136,7 @@ body.night {
     font-weight: 500;
     font-size: 1rem;
     text-transform: uppercase;
-    color: $myColor;
+    color: $primaryColor;
     margin-bottom: 50px;
     letter-spacing: 2px;
   }
@@ -168,7 +169,7 @@ body.night {
     font-weight: 500;
     font-size: 1rem;
     text-transform: uppercase;
-    color: $myColor;
+    color: $primaryColor;
     margin-bottom: 50px;
     letter-spacing: 2px;
   }
@@ -200,7 +201,7 @@ body.night {
       }
     }
     i {
-      color: $myColor;
+      color: $primaryColor;
       cursor: pointer;
       transition: 0.2s ease-in;
       font-size: 18px;
@@ -219,7 +220,7 @@ body.night {
     font-weight: 500;
     font-size: 1rem;
     text-transform: uppercase;
-    color: $myColor;
+    color: $primaryColor;
     margin-bottom: 50px;
     letter-spacing: 2px;
   }
@@ -243,14 +244,14 @@ body.night {
       justify-content: center;
 
       .view-links {
-        border: 1px solid $myColor;
+        border: 1px solid $primaryColor;
         margin-left: 15px;
         border-radius: 3px;
         padding: 5px;
 
         a {
           text-decoration: none;
-          color: $myColor;
+          color: $primaryColor;
 
           h3 {
             font-size: 10px;
@@ -264,7 +265,7 @@ body.night {
     .project-text {
       max-width: 700px;
       padding-bottom: 20px;
-      border-bottom: 1px solid $myColor;
+      border-bottom: 1px solid $primaryColor;
 
       h2 {
         font-weight: 500;
@@ -283,7 +284,7 @@ body.night {
         width: 100%;
 
         .view-info {
-          border: 1px solid $myColor;
+          border: 1px solid $primaryColor;
           margin-right: 15px;
           border-radius: 2px;
           padding: 5px;
@@ -291,7 +292,7 @@ body.night {
           h3 {
             font-size: 10px;
             font-weight: 500;
-            color: $myColor;
+            color: $primaryColor;
             margin: 0;
           }
         }
@@ -307,7 +308,7 @@ body.night {
     font-weight: 500;
     font-size: 1rem;
     text-transform: uppercase;
-    color: $myColor;
+    color: $primaryColor;
     margin-bottom: 50px;
     letter-spacing: 2px;
   }
@@ -316,10 +317,10 @@ body.night {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    border-bottom: 1px solid $myColor;
+    border-bottom: 1px solid $primaryColor;
 
     .view-info {
-      border: 1px solid $myColor;
+      border: 1px solid $primaryColor;
       margin-right: 15px;
       border-radius: 2px;
       padding: 5px;
@@ -327,7 +328,7 @@ body.night {
       h3 {
         font-size: 10px;
         font-weight: 500;
-        color: $myColor;
+        color: $primaryColor;
         margin: 0;
       }
     }
@@ -346,7 +347,7 @@ body.night {
       margin-bottom: 20px;
 
       i {
-        color: $myColor;
+        color: $primaryColor;
         cursor: pointer;
       }
     }
@@ -371,7 +372,7 @@ body.night {
 
   i {
     font-size: 25px;
-    color: $myColor;
+    color: $primaryColor;
     cursor: pointer;
   }
 }
@@ -385,7 +386,7 @@ body.night {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid $myColor;
+  border: 1px solid $primaryColor;
   border-radius: 50%;
 
   i {
@@ -394,19 +395,25 @@ body.night {
   }
 }
 
-.footer-fixed {
+.social-links {
   position: fixed;
-  top: 50%;
-  left: 20px;
-  display: flex;
-  flex-direction: column;
-  transform: translateY(-50%);
+  top: 20%;
+  left: 0px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: $secondaryColor;
 
-  a {
-    margin: 20px 0px;
+  .links-container {
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
 
-    i {
-      font-size: 24px;
+    a {
+      margin: 20px 0px;
+
+      i {
+        font-size: 24px;
+      }
     }
   }
 }
@@ -439,5 +446,31 @@ body.night {
   to {
     -webkit-transform: none;
     transform: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .social-links {
+    position: fixed;
+    top: 0;
+    left: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: $secondaryColor;
+
+    .links-container {
+      padding: 10px 0px;
+      display: flex;
+      flex-direction: row;
+
+      a {
+        margin: 00px 20px;
+
+        i {
+          font-size: 24px;
+        }
+      }
+    }
   }
 }

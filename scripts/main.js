@@ -1,17 +1,17 @@
 //Night Mode
-const switchBtn = document.querySelector(".switch-container");
+const toggleDarkMode = document.querySelector(".switch-container");
 const body = document.querySelector("body");
-const d = new Date();
-const hours = d.getHours();
+const date = new Date();
+const hours = date.getHours();
 const night = hours >= 19 || hours <= 7; // between 7pm and 7am
 
 if (night) {
   body.classList.add("night");
-  switchBtn.classList.add("active");
+  toggleDarkMode.classList.add("active");
 }
 
-switchBtn.addEventListener("click", () => {
-  if (switchBtn.classList.toggle("active")) {
+toggleDarkMode.addEventListener("click", () => {
+  if (toggleDarkMode.classList.toggle("active")) {
     body.classList.add("night");
   } else {
     body.classList.remove("night");
